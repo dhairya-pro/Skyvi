@@ -57,10 +57,10 @@ const WhoWeAre = () => {
             {/* Heading */}
             <motion.h2 
               variants={itemVariants}
-              className="text-4xl md:text-5xl lg:text-6xl font-extrabold text-[#0B1C39] leading-[1.1] mb-6"
+              className="text-2xl md:text-3xl lg:text-4xl font-extrabold text-[#0B1C39] leading-[1.1] mb-6"
             >
-              Your Trusted Partner <br />
-              in Global Logistics
+              Skyvi International is a trusted  <br />
+              India-based import company
             </motion.h2>
 
             {/* Description */}
@@ -68,9 +68,7 @@ const WhoWeAre = () => {
               variants={itemVariants}
               className="text-slate-600 text-lg leading-relaxed mb-8"
             >
-              We are a full-service logistics firm dedicated to streamlining your
-              supply chain. We combine advanced technology with deep
-              industry expertise to move your goods efficiently and reliably.
+              With strong connections across top Chinese manufacturers and years of experience in international trade, we manage the entire process—from product research, negotiation, quality check, and packaging to delivery in India.
             </motion.p>
 
             {/* Trust Badge */}

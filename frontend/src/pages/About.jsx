@@ -46,7 +46,7 @@ const About = () => {
       <JourneyTimeline />
 
       {/* Leadership Team Section */}
-      <LeadershipTeam />
+      {/* <LeadershipTeam /> */}
     </div>
   );
 };

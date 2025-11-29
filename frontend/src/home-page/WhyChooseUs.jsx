@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import { 
-  Globe, 
-  Tag, 
-  Clock, 
-  Headphones as Headset, // Lucide exports Headset as Headphones sometimes, aliasing it
-  Puzzle, 
-  BrainCircuit, 
-  Users 
+  Factory, 
+  Package, 
+  Users, 
+  ShieldCheck, 
+  Truck, 
+  Lock, 
+  Headphones 
 } from 'lucide-react';
 
 export const WhyChooseUs = () => {
@@ -17,39 +17,45 @@ export const WhyChooseUs = () => {
   const features = [
     { 
       id: 0, 
-      title: "Verified Global Network", 
-      desc: "Access an expansive, trusted network for seamless worldwide operations.",
-      icon: <Users size={28} /> 
+      title: "Direct Factory Access", 
+      desc: "We source products directly from verified Chinese factories—giving you the best price and best quality.",
+      icon: <Factory size={28} /> 
     },
     { 
       id: 1, 
-      title: "Competitive Pricing", 
-      desc: "We negotiate the best market rates to maximize your profit margins.",
-      icon: <Tag size={28} /> 
+      title: "All Categories Available", 
+      desc: "Electronics, Home & Kitchen, Toys, Tools, Beauty, Lifestyle—we have trusted factories in every category.",
+      icon: <Package size={28} /> 
     },
     { 
       id: 2, 
-      title: "Custom Solutions", 
-      desc: "Tailored logistics strategies designed to fit your unique business needs.",
-      icon: <Puzzle size={28} /> 
+      title: "Strong Global Partner Network", 
+      desc: "Connected with 1000+ suppliers across China to ensure fast, reliable, and accurate sourcing.",
+      icon: <Users size={28} /> 
     },
     { 
       id: 3, 
-      title: "24/7 Support", 
-      desc: "Dedicated support team available round-the-clock to assist you.",
-      icon: <Headset size={28} /> 
+      title: "Triple Quality Check", 
+      desc: "Every order is inspected, checked, and verified with photos/videos before shipping.",
+      icon: <ShieldCheck size={28} /> 
     },
     { 
       id: 4, 
-      title: "Strategic Planning", 
-      desc: "Data-driven insights to optimize your supply chain efficiency.",
-      icon: <BrainCircuit size={28} /> 
+      title: "Fast & Safe Delivery", 
+      desc: "Air, Sea & Express shipping with proper packaging and on-time delivery to India.",
+      icon: <Truck size={28} /> 
     },
     { 
       id: 5, 
-      title: "On-Time Delivery", 
-      desc: "Guaranteed timelines with real-time tracking for peace of mind.",
-      icon: <Clock size={28} /> 
+      title: "Full Product Privacy", 
+      desc: "Your ideas, product details & supplier information stay 100% confidential.",
+      icon: <Lock size={28} /> 
+    },
+    { 
+      id: 6, 
+      title: "End-to-End Import Support", 
+      desc: "We handle sourcing, negotiation, QC, shipping & documentation—so the import process is smooth and stress-free.",
+      icon: <Headphones size={28} /> 
     },
   ];
 
@@ -133,9 +139,7 @@ export const WhyChooseUs = () => {
           {/* RIGHT SIDE: Static Text Content */}
           <div className="text-center lg:text-left px-4">
             <p className="text-slate-600 leading-8 text-lg mb-10">
-              Choosing <strong className="text-[#0B1C39]">SKYVI</strong> means choosing trust, speed, 
-              and expertise. We work with verified suppliers worldwide, offer clear pricing, 
-              and deliver your products on time — with a dedicated team guiding you at every step.
+              Choosing <strong className="text-[#0B1C39]">SKYVI</strong>Your product idea, our sourcing power — let’s make it real. Upload Your Product & Get Instant Quotation!
             </p>
 
             {/* Logos Row */}

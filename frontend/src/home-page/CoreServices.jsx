@@ -6,7 +6,8 @@ import {
   ShieldCheck, 
   Tag, 
   Package, 
-  CandlestickChart, 
+  CandlestickChart,
+  TrendingUp,
   ArrowRight 
 } from 'lucide-react';
 
@@ -34,21 +35,27 @@ const servicesData = [
   {
     id: 4,
     icon: Tag,
-    title: "Private Labeling",
+    title: "Shipping & Logistics Management",
     description: "Build your own brand with ease.",
   },
   {
     id: 5,
     icon: Package,
-    title: "Packaging",
+    title: "OEM / Branding & Custom Packaging",
     description: "Export ready packaging and ready designs.",
   },
   {
     id: 6,
     icon: CandlestickChart,
     // Using Chart icon for Market Insights
-    title: "Market Insights",
+    title: "End-to-End Import Support",
     description: "Data-Driven sourcing strategies for growth.",
+  },
+  {
+    id: 7,
+    icon: TrendingUp,
+    title: "Trend & Product Research Support",
+    description: "Stay ahead with market insights and trending product analysis.",
   },
 ];
 

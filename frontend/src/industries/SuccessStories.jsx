@@ -6,23 +6,23 @@ const SuccessStories = () => {
   const testimonials = [
     {
       id: 1,
-      text: "Skyvi made sourcing from China effortless. Their communication and quality checks saved us time and cost.",
-      author: "Rahul Mehta",
-      role: "Importer (India)",
+      text: "One of our clients started with a 10-kg trial order from China. After seeing the quality and pricing, today they import full cargo shipments every month and supply pan-India.",
+      author: "From Small Order to Big Business",
+      role: "Client Success Story",
       isFeatured: false,
     },
     {
       id: 2,
-      text: "Skyvi made sourcing from China effortless. Their communication and quality checks saved us time and cost.",
-      author: "Rahul Mehta",
-      role: "Importer (India)",
+      text: "An Amazon seller approached us for sourcing 3 hot-selling items. We connected them with direct factories, lowered their cost by 35%, and today they have 5× more monthly sales.",
+      author: "Amazon Seller Boosted Profits",
+      role: "E-commerce Success",
       isFeatured: true, // This triggers the blue gradient style
     },
     {
       id: 3,
-      text: "Skyvi made sourcing from China effortless. Their communication and quality checks saved us time and cost.",
-      author: "Rahul Mehta",
-      role: "Importer (India)",
+      text: "A local shop owner ordered mixed products through us. With our factory-direct sourcing, they expanded their range and now supply 20+ retailers in their city.",
+      author: "Retail Shop Turned into Wholesale Supplier",
+      role: "Business Expansion",
       isFeatured: false,
     },
   ];

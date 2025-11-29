@@ -27,28 +27,40 @@ const JourneyTimeline = () => {
 
   const milestones = [
     {
-      year: '2020:',
+      year: '2019:',
       title: 'Founded in India',
-      position: 'top',
+      position: 'bottom',
       delay: '0ms'
     },
     {
+      year: '2020:',
+      title: 'Expand to China Network',
+      position: 'top',
+      delay: '150ms'
+    },
+    {
       year: '2021:',
-      title: 'Expanded to China Network',
+      title: 'Established Business Office and Warehouse in China',
       position: 'bottom',
-      delay: '200ms'
+      delay: '300ms'
+    },
+    {
+      year: '2022:',
+      title: 'Crossed 1000+ Shipments',
+      position: 'top',
+      delay: '450ms'
     },
     {
       year: '2023:',
-      title: 'Crossed 1000+ Shipments',
-      position: 'top',
-      delay: '400ms'
+      title: 'Added Private Label & Packaging Solutions',
+      position: 'bottom',
+      delay: '600ms'
     },
     {
       year: '2024:',
-      title: 'Added Private label & Label solutions',
-      position: 'bottom',
-      delay: '600ms'
+      title: 'OEM, ODM & Product Research',
+      position: 'top',
+      delay: '750ms'
     }
   ];
 
@@ -78,14 +90,14 @@ const JourneyTimeline = () => {
           <div className="relative h-80">
             <svg 
               className="w-full h-full absolute top-0 left-0"
-              viewBox="0 0 1000 300"
+              viewBox="0 0 1200 300"
               preserveAspectRatio="xMidYMid meet"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
             >
-              {/* Animated curved path - Smoother wave */}
+              {/* Animated curved path - Smoother wave with 6 points */}
               <path
-                d="M 50 250 Q 150 80, 250 150 Q 350 220, 500 140 Q 650 60, 750 120 Q 850 180, 950 80"
+                d="M 50 220 Q 120 100, 200 180 Q 280 260, 400 150 Q 520 40, 600 120 Q 680 200, 800 100 Q 920 0, 1000 80 Q 1080 160, 1150 60"
                 stroke="#FF6B35"
                 strokeWidth="5"
                 fill="none"
@@ -95,92 +107,130 @@ const JourneyTimeline = () => {
                   isVisible ? 'opacity-100' : 'opacity-0'
                 }`}
                 style={{
-                  strokeDasharray: 2000,
-                  strokeDashoffset: isVisible ? 0 : 2000,
+                  strokeDasharray: 2500,
+                  strokeDashoffset: isVisible ? 0 : 2500,
                   transition: 'stroke-dashoffset 2.5s ease-in-out'
                 }}
               />
               
               {/* Milestone dots positioned on the curve */}
-              <circle cx="50" cy="250" r="10" fill="#FF6B35" className={`transition-all duration-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
-              <circle cx="250" cy="150" r="10" fill="#FF6B35" className={`transition-all duration-500 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
-              <circle cx="500" cy="140" r="10" fill="#FF6B35" className={`transition-all duration-500 delay-400 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
-              <circle cx="750" cy="120" r="10" fill="#FF6B35" className={`transition-all duration-500 delay-600 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="50" cy="220" r="10" fill="#FF6B35" className={`transition-all duration-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="200" cy="180" r="10" fill="#FF6B35" className={`transition-all duration-500 delay-150 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="400" cy="150" r="10" fill="#FF6B35" className={`transition-all duration-500 delay-300 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="600" cy="120" r="10" fill="#FF6B35" className={`transition-all duration-500 delay-450 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="800" cy="100" r="10" fill="#FF6B35" className={`transition-all duration-500 delay-600 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="1000" cy="80" r="10" fill="#FF6B35" className={`transition-all duration-500 delay-750 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
               
               {/* White border circles for better visibility */}
-              <circle cx="50" cy="250" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
-              <circle cx="250" cy="150" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 delay-200 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
-              <circle cx="500" cy="140" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 delay-400 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
-              <circle cx="750" cy="120" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 delay-600 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="50" cy="220" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="200" cy="180" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 delay-150 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="400" cy="150" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 delay-300 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="600" cy="120" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 delay-450 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="800" cy="100" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 delay-600 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
+              <circle cx="1000" cy="80" r="12" fill="none" stroke="white" strokeWidth="3" className={`transition-all duration-500 delay-750 ${isVisible ? 'opacity-100 scale-100' : 'opacity-0 scale-0'}`} />
             </svg>
           </div>
 
           {/* Milestone Cards - Positioned to align with dots */}
-          <div className="relative grid grid-cols-4 gap-4 px-4">
-            {/* 2020 - Bottom */}
-            <div className="flex flex-col items-start pt-8">
+          <div className="relative grid grid-cols-6 gap-2 px-4">
+            {/* 2019 - Bottom */}
+            <div className="flex flex-col items-start pt-4">
               <div
                 className={`transition-all duration-1000 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{ transitionDelay: '0ms' }}
               >
-                <div className="text-3xl xl:text-4xl font-bold text-orange mb-2">
+                <div className="text-2xl xl:text-3xl font-bold text-orange mb-2">
+                  2019:
+                </div>
+                <div className="text-navy font-semibold text-sm xl:text-base leading-tight">
+                  Founded in<br />India
+                </div>
+              </div>
+            </div>
+
+            {/* 2020 - Top */}
+            <div className="flex flex-col items-start -mt-24">
+              <div
+                className={`transition-all duration-1000 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: '150ms' }}
+              >
+                <div className="text-2xl xl:text-3xl font-bold text-orange mb-2">
                   2020:
                 </div>
-                <div className="text-navy font-semibold text-base xl:text-lg leading-tight">
-                  Founded in India
+                <div className="text-navy font-semibold text-sm xl:text-base leading-tight">
+                  Expand to<br />China Network
                 </div>
               </div>
             </div>
 
-            {/* 2021 - Top */}
-            <div className="flex flex-col items-start -mt-32">
+            {/* 2021 - Bottom */}
+            <div className="flex flex-col items-start pt-8">
               <div
                 className={`transition-all duration-1000 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
-                style={{ transitionDelay: '200ms' }}
+                style={{ transitionDelay: '300ms' }}
               >
-                <div className="text-3xl xl:text-4xl font-bold text-orange mb-2">
+                <div className="text-2xl xl:text-3xl font-bold text-orange mb-2">
                   2021:
                 </div>
-                <div className="text-navy font-semibold text-base xl:text-lg leading-tight">
-                  Expanded to<br />China Network
+                <div className="text-navy font-semibold text-sm xl:text-base leading-tight">
+                  Established Office<br />& Warehouse in China
                 </div>
               </div>
             </div>
 
-            {/* 2023 - Top */}
-            <div className="flex flex-col items-start -mt-32">
+            {/* 2022 - Top */}
+            <div className="flex flex-col items-start -mt-28">
               <div
                 className={`transition-all duration-1000 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
-                style={{ transitionDelay: '400ms' }}
+                style={{ transitionDelay: '450ms' }}
               >
-                <div className="text-3xl xl:text-4xl font-bold text-orange mb-2">
-                  2023:
+                <div className="text-2xl xl:text-3xl font-bold text-orange mb-2">
+                  2022:
                 </div>
-                <div className="text-navy font-semibold text-base xl:text-lg leading-tight">
+                <div className="text-navy font-semibold text-sm xl:text-base leading-tight">
                   Crossed 1000+<br />Shipments
                 </div>
               </div>
             </div>
 
-            {/* 2024 - Top */}
-            <div className="flex flex-col items-start -mt-40">
+            {/* 2023 - Bottom */}
+            <div className="flex flex-col items-start pt-12">
               <div
                 className={`transition-all duration-1000 ${
                   isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
                 }`}
                 style={{ transitionDelay: '600ms' }}
               >
-                <div className="text-3xl xl:text-4xl font-bold text-orange mb-2">
+                <div className="text-2xl xl:text-3xl font-bold text-orange mb-2">
+                  2023:
+                </div>
+                <div className="text-navy font-semibold text-sm xl:text-base leading-tight">
+                  Added Private Label<br />& Packaging Solutions
+                </div>
+              </div>
+            </div>
+
+            {/* 2024 - Top */}
+            <div className="flex flex-col items-start -mt-32">
+              <div
+                className={`transition-all duration-1000 ${
+                  isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                }`}
+                style={{ transitionDelay: '750ms' }}
+              >
+                <div className="text-2xl xl:text-3xl font-bold text-orange mb-2">
                   2024:
                 </div>
-                <div className="text-navy font-semibold text-base xl:text-lg leading-tight">
-                  Added Private label<br />& Label solutions
+                <div className="text-navy font-semibold text-sm xl:text-base leading-tight">
+                  OEM, ODM &<br />Product Research
                 </div>
               </div>
             </div>

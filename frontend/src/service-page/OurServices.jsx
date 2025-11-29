@@ -27,38 +27,76 @@ const OurServices = () => {
 
   const services = [
     {
-      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800&q=80',
-      title: 'Global Trade & Compliance',
-      description: 'Trusted sourcing and compliance solutions to expand confidently across global markets.',
+      image: 'https://images.unsplash.com/photo-1498049794561-7780e7231661?w=800&q=80',
+      title: 'Electronics & Gadgets',
+      description: 'Cutting-edge electronics and smart devices sourced from top manufacturers.',
       features: [
-        'Product Sourcing',
-        'Market Research & Insights',
-        'Compliance & Regulations'
+        'Smartphones & Tablets',
+        'Smart Home Devices',
+        'Audio & Wearables',
+        'Computer Accessories'
       ],
       delay: '0ms'
     },
     {
-      image: 'https://images.unsplash.com/photo-1553413077-190dd305871c?w=800&q=80',
-      title: 'Logistics & Operations',
-      description: 'Reliable logistics ensuring smooth, on-time delivery worldwide.',
+      image: 'https://images.unsplash.com/photo-1556911220-bff31c812dba?w=800&q=80',
+      title: 'Home & Kitchen Essentials',
+      description: 'Quality home and kitchen products to enhance everyday living.',
       features: [
-        'Air Freight / Ocean Freight',
-        'Customs Brokerage',
-        'Warehousing & Inventory'
+        'Cookware & Utensils',
+        'Home Decor Items',
+        'Storage Solutions',
+        'Kitchen Appliances'
       ],
-      delay: '150ms'
+      delay: '100ms'
     },
     {
-      image: 'https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=800&q=80',
-      title: 'Branding & Growth',
-      description: 'Build strong global brands with labeling, packaging, and quality support.',
+      image: 'https://images.unsplash.com/photo-1558877385-8c7f8c6e1b9f?w=800&q=80',
+      title: 'Toys & Kids Products',
+      description: 'Safe, fun, and educational toys for children of all ages.',
       features: [
-        'Private / White Labeling',
-        'Packaging & Labeling',
-        'Product Line Development',
-        'Quality Assurance'
+        'Educational Toys',
+        'Outdoor Play Equipment',
+        'Baby Care Products',
+        'Action Figures & Dolls'
+      ],
+      delay: '200ms'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=800&q=80',
+      title: 'Beauty, Health & Personal Care',
+      description: 'Premium beauty and wellness products for personal care.',
+      features: [
+        'Skincare & Cosmetics',
+        'Hair Care Products',
+        'Health Supplements',
+        'Personal Hygiene Items'
       ],
       delay: '300ms'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1530124566582-a618bc2615dc?w=800&q=80',
+      title: 'Tools, Hardware & Auto Accessories',
+      description: 'Durable tools and automotive accessories for professionals and enthusiasts.',
+      features: [
+        'Power & Hand Tools',
+        'Hardware & Fasteners',
+        'Car Accessories',
+        'Automotive Parts'
+      ],
+      delay: '400ms'
+    },
+    {
+      image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80',
+      title: 'Lifestyle, Gifts & Fashion Accessories',
+      description: 'Trendy fashion accessories and unique gift items for every occasion.',
+      features: [
+        'Fashion Jewelry',
+        'Bags & Wallets',
+        'Watches & Sunglasses',
+        'Gift Items & Novelties'
+      ],
+      delay: '500ms'
     }
   ];
 

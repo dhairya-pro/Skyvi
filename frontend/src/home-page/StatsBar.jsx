@@ -35,21 +35,21 @@ const StatsBar = () => {
     {
       id: 1,
       icon: <Calendar className="w-10 h-10 md:w-12 md:h-12 text-orange-500" />,
-      number: 10,
+      number: 15,
       suffix: "+",
       label: "Years Experience", // Corrected typo from image 'Experiance'
     },
     {
       id: 2,
       icon: <Package className="w-10 h-10 md:w-12 md:h-12 text-orange-500" />,
-      number: 1000,
+      number: 15000,
       suffix: "+",
       label: "Shipments Completed",
     },
     {
       id: 3,
       icon: <Globe className="w-10 h-10 md:w-12 md:h-12 text-orange-500" />,
-      number: 25,
+      number: 1000,
       suffix: "+",
       label: "Global Partners",
     },
