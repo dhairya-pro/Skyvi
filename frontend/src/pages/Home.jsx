@@ -4,6 +4,7 @@ import { ArrowRight } from 'lucide-react';
 import WhoWeAre from '../home-page/WhoWeAre';
 import StatsBar from '../home-page/StatsBar';
 import CoreServices from '../home-page/CoreServices';
+import CategorySection from '../home-page/CategorySection';
 import WhyChooseUs from '../home-page/WhyChooseUs';
 import ContactPage from '../home-page/ContactPage';
 import homepage1 from '../assets/home-page1.jpg'
@@ -94,6 +95,7 @@ const Home = () => {
         <TransportationServices />
         <WhoWeAre />
         <StatsBar />
+        <CategorySection />
         <CoreServices />
         <WhyChooseUs />
         <ContactPage />
