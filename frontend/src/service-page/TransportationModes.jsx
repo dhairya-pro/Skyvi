@@ -1,5 +1,5 @@
   import React, { useEffect, useState, useRef } from 'react';
-import { Ship, Plane, Truck, Train } from 'lucide-react';
+import { ShieldCheck, PackagePlus, Zap, BadgeCheck } from 'lucide-react';
 
 const TransportationModes = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -28,30 +28,30 @@ const TransportationModes = () => {
 
   const transportModes = [
     {
-      icon: Ship,
-      title: 'OCEAN',
-      subtitle: 'TRANSPORTATION',
+      icon: ShieldCheck,
+      title: 'CONFIDENTIAL',
+      subtitle: 'SOURCING',
       color: 'from-orange-400 to-orange-600',
       delay: '0ms'
     },
     {
-      icon: Plane,
-      title: 'AIRWAYS',
-      subtitle: 'TRANSPORTATION',
+      icon: PackagePlus,
+      title: 'EXPANDING',
+      subtitle: 'PRODUCT LINE',
       color: 'from-orange-400 to-orange-600',
       delay: '150ms'
     },
     {
-      icon: Truck,
-      title: 'ROAD',
-      subtitle: 'TRANSPORTATION',
+      icon: Zap,
+      title: 'FAST',
+      subtitle: 'DELIVERY',
       color: 'from-orange-400 to-orange-600',
       delay: '300ms'
     },
     {
-      icon: Train,
-      title: 'TRAIN',
-      subtitle: 'TRANSPORTATION',
+      icon: BadgeCheck,
+      title: 'QUALITY',
+      subtitle: 'INSPECTION',
       color: 'from-orange-400 to-orange-600',
       delay: '450ms'
     }
