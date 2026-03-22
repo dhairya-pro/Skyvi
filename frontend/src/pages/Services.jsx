@@ -3,6 +3,7 @@ import ServicesHero from '../service-page/ServicesHero';
 import OurServices from '../service-page/OurServices';    
 import TransportationModes from '../service-page/TransportationModes';
 import CTASection from '../service-page/CTASection';
+import SuccessStories from '../service-page/SuccessStories';
 
 const Services = () => {
   return (
@@ -19,8 +20,10 @@ const Services = () => {
       {/* Our Services Section */}
       <OurServices />
 
-      {/* Additional spacing before footer */}
-      <div className="h-12 sm:h-16 md:h-20"></div>
+      {/* Success Stories Section */}
+      <SuccessStories />
+
+  
     </>
   );
 };
