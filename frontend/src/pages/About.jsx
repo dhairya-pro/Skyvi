@@ -1,5 +1,6 @@
 import React from 'react';
 import GuidingPrinciples from '../about-page/GuidingPrinciples';
+import AboutWhoWeAre from '../about-page/AboutWhoWeAre';
 import JourneyTimeline from '../about-page/JourneyTimeline';
 import LeadershipTeam from '../about-page/LeadershipTeam';
 
@@ -20,7 +21,10 @@ const About = () => {
         <div className="absolute inset-0 bg-navy/70"></div>
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/20 to-navy/10"></div>
+        <div 
+          className="absolute inset-0"
+          style={{ background: 'linear-gradient(180deg, #051A5E 0%, #374C8E 40%, rgba(244, 243, 243, 0.20) 90%)' }}
+        ></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -36,14 +40,15 @@ const About = () => {
         </div>
       </section>
 
+      {/* Who We Are Section */}
+      <AboutWhoWeAre />
+
       {/* Guiding Principles Section */}
       <GuidingPrinciples />
 
       {/* Journey Timeline Section */}
       <JourneyTimeline />
 
-      {/* Leadership Team Section */}
-      {/* <LeadershipTeam /> */}
     </div>
   );
 };
