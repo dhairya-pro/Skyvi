@@ -92,7 +92,7 @@ const SuccessStories = () => {
                   className="w-full h-full object-cover"
                 />
                 {/* Floating Icon Badge Container placed absolutely on the bottom left corner of the image area so it overlaps */}
-                <div className="absolute -bottom-6 left-6 w-14 h-14 bg-white rounded-xl shadow-lg flex items-center justify-center z-10">
+                <div className="absolute -bottom-2 left-6 w-14 h-14 bg-white rounded-xl shadow-lg flex items-center justify-center z-10">
                   {story.icon}
                 </div>
               </div>
@@ -126,34 +126,7 @@ const SuccessStories = () => {
                   ))}
                 </div>
 
-                {/* Bottom Author & Quote section */}
-                <div className="mt-auto border-t border-gray-100 pt-6 flex gap-4">
-                  {/* Avatar */}
-                  <img 
-                    src={story.avatar} 
-                    alt={story.name} 
-                    className="w-12 h-12 rounded-full object-cover border-2 border-white shadow-sm shrink-0"
-                  />
-                  {/* Content */}
-                  <div>
-                    <div className="flex items-center gap-3 mb-1">
-                      <span className="font-bold text-[#1A202C] text-[15px]">{story.name}</span>
-                      <div className="flex text-[#F5C518]">
-                        {[...Array(5)].map((_, i) => (
-                          <Star 
-                            key={i} 
-                            size={12} 
-                            fill={i < story.rating ? "currentColor" : "transparent"} 
-                            className={i < story.rating ? "" : "text-gray-300"}
-                          />
-                        ))}
-                      </div>
-                    </div>
-                    <p className="text-gray-500 text-[13px] leading-relaxed italic pr-2">
-                      {story.quote}
-                    </p>
-                  </div>
-                </div>
+               
 
               </div>
             </div>
