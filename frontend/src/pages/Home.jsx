@@ -42,14 +42,14 @@ const Home = () => {
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
           <div className="max-w-4xl">
             {/* Animated Heading */}
-            <h1 
-              className={`text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold text-white leading-tight mb-4 sm:mb-6 transition-all duration-1000 ${
+            <h3
+              className={`text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight mb-4 sm:mb-6 transition-all duration-1000 ${
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
               Your <span className="text-orange bg-clip-text animate-gradient-shift">Global Partner</span> for<br className="hidden sm:block" />
               <span className="block sm:inline"> Smarter Sourcing & Seamless Trade</span>
-            </h1>
+            </h3>
             
             {/* Animated Subtitle */}
             <p 

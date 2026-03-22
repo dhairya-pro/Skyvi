@@ -35,7 +35,7 @@ const StatsBar = () => {
     {
       id: 1,
       icon: <Calendar className="w-10 h-10 md:w-12 md:h-12 text-orange-500" />,
-      number: 15,
+      number: 6,
       suffix: "+",
       label: "Years Experience", // Corrected typo from image 'Experiance'
     },

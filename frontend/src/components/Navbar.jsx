@@ -53,14 +53,14 @@ const Navbar = () => {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-4 py-3 bg-gradient-to-b from-white/95 to-transparent backdrop-blur-sm">
       <div className="max-w-7xl mx-auto">
-        <div className="bg-white rounded-3xl shadow-lg px-6 py-3">
-          <div className="flex items-center justify-between">
+        <div className="bg-white rounded-3xl shadow-lg px-6 py-0 overflow-visible">
+          <div className="flex items-center justify-between h-16">
             {/* Logo - Balanced Size */}
             <Link to="/" className="flex items-center hover:opacity-80 transition-opacity">
               <img 
                 src={logo} 
-                alt="Skyvi Logo" 
-                className="h-16 md:h-18 w-auto object-contain" 
+                alt="Skyvi Logo"
+                className="h-24 md:h-28 w-auto object-contain -my-4" 
               />
             </Link>
 
