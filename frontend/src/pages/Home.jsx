@@ -47,7 +47,7 @@ const Home = () => {
                 isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
               }`}
             >
-              Your <span className="text-orange bg-clip-text animate-gradient-shift">Global Partner</span> for<br className="hidden sm:block" />
+              Your <span className="text-orange bg-clip-text animate-gradient-shift ">Global Partner</span> for<br className="hidden sm:block" />
               <span className="block sm:inline"> Smarter Sourcing & Seamless Trade</span>
             </h3>
             

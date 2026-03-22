@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Ship, Plane, Truck, Train } from 'lucide-react';
+import { ShieldCheck, PackagePlus, Zap, BadgeCheck } from 'lucide-react';
 
 const TransportationServices = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -14,24 +14,24 @@ const TransportationServices = () => {
 
   const services = [
     {
-      icon: Ship,
-      title: 'OCEAN',
-      subtitle: 'TRANSPORTATION',
+      icon: ShieldCheck,
+      title: 'CONFIDENTIAL',
+      subtitle: 'SOURCING',
     },
     {
-      icon: Plane,
-      title: 'AIRWAYS',
-      subtitle: 'TRANSPORTATION',
+      icon: PackagePlus,
+      title: 'EXPANDING',
+      subtitle: 'PRODUCT LINE',
     },
     {
-      icon: Truck,
-      title: 'ROAD',
-      subtitle: 'TRANSPORTATION',
+      icon: Zap,
+      title: 'FAST',
+      subtitle: 'DELIVERY',
     },
     {
-      icon: Train,
-      title: 'TRAIN',
-      subtitle: 'TRANSPORTATION',
+      icon: BadgeCheck,
+      title: 'QUALITY',
+      subtitle: 'INSPECTION',
     },
   ];
 
