@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react';
-import { HelpCircle, FileText, ShoppingCart, CheckCircle, Package, Truck, Gift } from 'lucide-react';
+import { ClipboardList, Search, CheckCircle, PackageCheck, Settings, Package, Truck } from 'lucide-react';
 
 const HowWeWork = () => {
   const [visibleSteps, setVisibleSteps] = useState([]);
@@ -9,51 +9,44 @@ const HowWeWork = () => {
     {
       number: '01',
       title: 'Inquiry & Product Details',
-      description: 'Share your needs & ideas',
-      icon: HelpCircle,
-      side: 'right'
+      description: 'Share your requirements with our team',
+      icon: ClipboardList,
     },
     {
       number: '02',
       title: 'Market Research & Quotation',
-      description: 'Find suppliers & pricing',
-      icon: FileText,
-      side: 'left'
+      description: 'We find best suppliers & pricing',
+      icon: Search,
     },
     {
       number: '03',
       title: 'Order Confirmation',
-      description: 'Finalize Contract',
-      icon: ShoppingCart,
-      side: 'right'
+      description: 'Finalize product & agreement',
+      icon: CheckCircle,
     },
     {
       number: '04',
       title: 'Sample & Verification',
-      description: 'Approve quality',
-      icon: CheckCircle,
-      side: 'left'
+      description: 'Approve quality before production',
+      icon: PackageCheck,
     },
     {
       number: '05',
       title: 'Production & Quality Check',
-      description: 'Monitor Manufacturing',
-      icon: Package,
-      side: 'right'
+      description: 'We monitor manufacturing',
+      icon: Settings,
     },
     {
       number: '06',
       title: 'Shipping & Customs',
-      description: 'Handle logistics',
-      icon: Truck,
-      side: 'left'
+      description: 'Smooth import handling',
+      icon: Package,
     },
     {
       number: '07',
       title: 'Delivery & Support',
-      description: 'Receive goods & assistance',
-      icon: Gift,
-      side: 'right'
+      description: 'Receive goods with full support',
+      icon: Truck,
     }
   ];
 
@@ -105,7 +98,7 @@ const HowWeWork = () => {
             How We Work
           </h1>
           <p className="text-lg md:text-xl text-white/90 mb-8 animate-fade-in-up">
-            Our streamlined process
+            Our streamlined process to ensure smooth importing
           </p>
           <button className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 hover:shadow-2xl shadow-lg animate-pulse-button">
             Enquire Now →
@@ -113,98 +106,58 @@ const HowWeWork = () => {
         </div>
       </div>
 
-      {/* Workflow Timeline Section */}
-      <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-        <div className="relative">
-          {/* Vertical Timeline Line - Center */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0 w-0.5 bg-orange-400 hidden lg:block"></div>
+      {/* Workflow Process Section */}
+      <div className="max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold text-[#1e3a8a] mb-4">
+            How We Work
+          </h2>
+          <p className="text-gray-500 text-lg">
+            Our streamlined process to ensure smooth importing.
+          </p>
+        </div>
 
-          {/* Timeline Steps */}
-          <div className="space-y-20">
-            {workflowSteps.map((step, index) => {
-              const Icon = step.icon;
-              const isVisible = visibleSteps.includes(index);
-              const isLeft = step.side === 'left';
-              
-              return (
-                <div
-                  key={index}
-                  ref={(el) => (stepsRef.current[index] = el)}
-                  className={`relative transition-all duration-1000 ${
-                    isVisible 
-                      ? 'opacity-100 translate-y-0' 
-                      : `opacity-0 ${isLeft ? 'translate-x-10' : '-translate-x-10'} translate-y-10`
-                  }`}
-                >
-                  {/* Desktop Layout */}
-                  <div className="hidden lg:grid lg:grid-cols-2 gap-8 items-center">
-                    {/* Left Side */}
-                    {isLeft ? (
-                      <>
-                        <div className="text-right pr-12">
-                          <div className="inline-block">
-                            <span className="text-sm font-bold text-[#4a5f8f] mb-2 block">{step.number}</span>
-                            <h3 className="text-xl font-bold text-[#1e3a8a] mb-2">
-                              {step.title}
-                            </h3>
-                            <p className="text-gray-600 text-sm">{step.description}</p>
-                          </div>
-                        </div>
-                        <div className="relative">
-                          {/* Orange Dot on Line */}
-                          <div className="absolute -left-[18px] top-1/2 transform -translate-y-1/2 w-3 h-3 bg-orange-500 rounded-full shadow-lg animate-ping-slow"></div>
-                          <div className="absolute -left-[18px] top-1/2 transform -translate-y-1/2 w-3 h-3 bg-orange-500 rounded-full shadow-lg"></div>
-                          
-                          {/* Icon Box */}
-                          <div className="ml-8">
-                            <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-orange-50 rounded-3xl flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 border border-orange-200">
-                              <Icon className="text-orange-500" size={40} strokeWidth={1.5} />
-                            </div>
-                          </div>
-                        </div>
-                      </>
-                    ) : (
-                      <>
-                        <div className="relative">
-                          {/* Orange Dot on Line */}
-                          <div className="absolute -right-[18px] top-1/2 transform -translate-y-1/2 w-3 h-3 bg-orange-500 rounded-full shadow-lg animate-ping-slow"></div>
-                          <div className="absolute -right-[18px] top-1/2 transform -translate-y-1/2 w-3 h-3 bg-orange-500 rounded-full shadow-lg"></div>
-                          
-                          {/* Icon Box */}
-                          <div className="mr-8 ml-auto w-24">
-                            <div className="w-24 h-24 bg-gradient-to-br from-orange-100 to-orange-50 rounded-3xl flex items-center justify-center shadow-md hover:shadow-xl transition-all duration-300 hover:scale-110 border border-orange-200">
-                              <Icon className="text-orange-500" size={40} strokeWidth={1.5} />
-                            </div>
-                          </div>
-                        </div>
-                        <div className="text-left pl-12">
-                          <span className="text-sm font-bold text-[#4a5f8f] mb-2 block">{step.number}</span>
-                          <h3 className="text-xl font-bold text-[#1e3a8a] mb-2">
-                            {step.title}
-                          </h3>
-                          <p className="text-gray-600 text-sm">{step.description}</p>
-                        </div>
-                      </>
-                    )}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+          {workflowSteps.map((step, index) => {
+            const Icon = step.icon;
+            const isVisible = visibleSteps.includes(index);
+            
+            return (
+              <div 
+                key={index}
+                ref={(el) => (stepsRef.current[index] = el)}
+                className={`bg-white rounded-[20px] p-8 shadow-[0_4px_20px_-4px_rgba(0,0,0,0.05)] hover:shadow-[0_8px_30px_-4px_rgba(0,0,0,0.1)] transition-all duration-700 border border-gray-100 flex flex-col ${index === 6 ? 'lg:col-start-2' : ''} ${
+                  isVisible 
+                    ? 'opacity-100 translate-y-0' 
+                    : 'opacity-0 translate-y-10'
+                }`}
+              >
+                <div className="flex items-start mb-6 gap-4">
+                  <div className="bg-[#3b5998] text-white text-sm font-semibold px-2.5 py-1 rounded-lg">
+                    {step.number}
                   </div>
-
-                  {/* Mobile Layout */}
-                  <div className="lg:hidden flex items-center gap-4">
-                    <div className="w-20 h-20 bg-gradient-to-br from-orange-100 to-orange-50 rounded-3xl flex items-center justify-center shadow-md flex-shrink-0 border border-orange-200">
-                      <Icon className="text-orange-500" size={32} strokeWidth={1.5} />
-                    </div>
-                    <div>
-                      <span className="text-sm font-bold text-[#4a5f8f] mb-1 block">{step.number}</span>
-                      <h3 className="text-lg font-bold text-[#1e3a8a] mb-1">
-                        {step.title}
-                      </h3>
-                      <p className="text-gray-600 text-sm">{step.description}</p>
-                    </div>
+                  <div className="w-12 h-12 flex items-center justify-center">
+                    <Icon className="text-orange-400 opacity-90" size={44} strokeWidth={1.5} />
                   </div>
                 </div>
-              );
-            })}
-          </div>
+                <h3 className="text-lg font-bold text-[#1e3a8a] mb-2">
+                  {step.title}
+                </h3>
+                <p className="text-gray-500 text-sm leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
+            );
+          })}
+        </div>
+
+        <div className="text-center">
+          <h3 className="text-[1.75rem] font-bold text-[#1e3a8a] mb-6">
+            Start Your Import Journey Today
+          </h3>
+          <button className="bg-[#3b5998] hover:bg-[#2d4f8f] text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:scale-105 shadow-lg flex items-center gap-2 mx-auto">
+            Enquire Now &rarr;
+          </button>
         </div>
       </div>
 
