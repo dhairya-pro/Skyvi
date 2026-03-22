@@ -20,7 +20,7 @@ const About = () => {
         <div className="absolute inset-0 bg-navy/70"></div>
         
         {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-navy/80 via-navy/60 to-navy/80"></div>
+        <div className="absolute inset-0 bg-gradient-to-b from-navy/60 via-navy/20 to-navy/10"></div>
 
         {/* Content */}
         <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -31,10 +31,7 @@ const About = () => {
           </h1>
           
           <p className="text-base sm:text-lg md:text-xl text-gray-200 max-w-4xl mx-auto leading-relaxed">
-            We are a full-service logistics firm dedicated to streamlining your supply chain. We combine 
-            advanced technology with deep industry expertise to move your goods efficiently and 
-            reliably. Trusted by brands across 15+ countries, we are committed to being your strategic 
-            partner in global trade.
+            We are a full-service logistics firm dedicated to streamlining your supply chain using advanced technology and deep industry expertise. Trusted in 25+ countries, we ensure efficient and reliable global trade.
           </p>
         </div>
       </section>

@@ -63,14 +63,14 @@ const CategorySection = () => {
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#051A5E] mb-4" 
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            Product Categories We Source & Deliver Globally
+            Product Categories
           </h2>
           <p 
             className="text-base sm:text-lg text-gray-500 max-w-3xl leading-relaxed font-medium"
             style={{ fontFamily: 'Montserrat, sans-serif' }}
           >
-            We help businesses import high-quality products across multiple categories 
-            with reliable sourcing and global logistics support.
+          We help businesses import high-quality products across multiple categories 
+          with reliable sourcing and global logistics support.
           </p>
         </div>
 
