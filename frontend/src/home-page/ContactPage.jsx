@@ -143,8 +143,8 @@ const ContactForm = () => {
                     <MapPin className="w-5 h-5 text-white" />
                   </div>
                   <p className="text-gray-600 text-sm font-medium pt-2">
-                    123, Anywhere in City<br />
-                    , Ahemedabad
+                    Surat - Gujarat 395004<br />
+                    China - Yiwu,Guangzhou
                   </p>
                 </div>
 
@@ -154,7 +154,7 @@ const ContactForm = () => {
                     <Phone className="w-5 h-5 text-white" />
                   </div>
                   <p className="text-gray-600 text-sm font-medium">
-                    +91 78965 41236
+                    +91 91155 78910
                   </p>
                 </div>
 

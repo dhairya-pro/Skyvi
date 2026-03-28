@@ -67,13 +67,13 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="text-lg font-semibold mb-4">Our Services</h3>
+            <h3 className="text-lg font-semibold mb-4">Our Policy</h3>
             <ul className="space-y-2">
-              <li className="text-gray-300 text-sm">Ocean Transportation</li>
-              <li className="text-gray-300 text-sm">Airways Transportation</li>
-              <li className="text-gray-300 text-sm">Road Transportation</li>
-              <li className="text-gray-300 text-sm">Train Transportation</li>
-              <li className="text-gray-300 text-sm">Supply Chain Solutions</li>
+              <li className="text-gray-300 text-sm">Privacy Policy</li>
+              <li className="text-gray-300 text-sm">terms & conditions</li>
+              <li className="text-gray-300 text-sm">Shipping Policy</li>
+              <li className="text-gray-300 text-sm">Return Policy</li>
+              <li className="text-gray-300 text-sm">Cancellation Policy</li>
             </ul>
           </div>
 
@@ -84,16 +84,16 @@ const Footer = () => {
               <li className="flex items-start space-x-3">
                 <MapPin size={18} className="text-orange mt-1 flex-shrink-0" />
                 <span className="text-gray-300 text-sm">
-                  123 Business Avenue, Trade City, TC 12345
+                  Surat - Gujarat 395004;China - Yiwu,Guangzhou
                 </span>
               </li>
               <li className="flex items-center space-x-3">
                 <Phone size={18} className="text-orange flex-shrink-0" />
-                <span className="text-gray-300 text-sm">+1 (555) 123-4567</span>
+                <span className="text-gray-300 text-sm">+91 91155 78910</span>
               </li>
               <li className="flex items-center space-x-3">
                 <Mail size={18} className="text-orange flex-shrink-0" />
-                <span className="text-gray-300 text-sm">info@skyvi.com</span>
+                <span className="text-gray-300 text-sm">skyviinternational@gmail.com</span>
               </li>
             </ul>
           </div>
@@ -103,7 +103,7 @@ const Footer = () => {
         <div className="border-t border-navy-light mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <p className="text-gray-400 text-sm">
-              © 2025 SKYVI International. All rights reserved.
+              © 2026 SKYVI International. All rights reserved.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
               <a href="#" className="text-gray-400 hover:text-orange text-sm transition-colors">

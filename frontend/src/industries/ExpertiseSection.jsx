@@ -79,10 +79,10 @@ const ExpertiseSection = () => {
           viewport={{ once: true }}
           className="max-w-3xl mx-auto space-y-6"
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white drop-shadow-sm">
+          <h2 className="text-4xl md:text-5xl font-bold text-navy">
             Our Expertise
           </h2>
-          <p className="text-white/90 text-lg md:text-xl leading-relaxed font-medium drop-shadow-sm">
+          <p className="text-gray-700 text-lg md:text-xl leading-relaxed font-medium">
             We specialize in connecting businesses with reliable sourcing partners across a diverse range of industries. Discover how we can support product development and supply chain needs.
           </p>
           

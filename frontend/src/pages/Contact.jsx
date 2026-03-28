@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Send, Facebook, Twitter, Linkedin } from 'lucide-react';
-import GoogleMapsLink from '../components/GoogleMapsLink';
+
+
 const Contact = () => {
   const [formData, setFormData] = useState({
     name: '',
@@ -70,8 +71,8 @@ const Contact = () => {
                     <MapPin className="text-white" size={24} />
                   </div>
                   <div>
-                    <p className="text-gray-700 font-medium">123, Anywhere in city,</p>
-                    <p className="text-gray-700 font-medium">Ahmedabad, Gujarat.</p>
+                    <p className="text-gray-700 font-medium">Surat - Gujarat 395004</p>
+                    <p className="text-gray-700 font-medium">China - Yiwu,Guangzhou</p>
                   </div>
                 </div>
 
@@ -80,7 +81,7 @@ const Contact = () => {
                     <Phone className="text-white" size={24} />
                   </div>
                   <div>
-                    <p className="text-gray-700 font-medium">+91 78965 41236</p>
+                    <p className="text-gray-700 font-medium">+91 91155 78910</p>
                   </div>
                 </div>
 
@@ -294,7 +295,7 @@ const Contact = () => {
           animation: slide-left 0.8s ease-out 0.6s both;
         }
       `}</style>
-      <GoogleMapsLink />    
+
     </div>
   );
 };
